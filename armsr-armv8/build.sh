@@ -45,13 +45,8 @@ PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn
-PACKAGES="$PACKAGES luci-app-cloudflared
 PACKAGES="$PACKAGES luci-app-attendedsysupgrade
-PACKAGES="$PACKAGES luci-app-upnp
 PACKAGES="$PACKAGES luci-app-wol
-PACKAGES="$PACKAGES luci-i18n-softethervpn-zh-cn
-PACKAGES="$PACKAGES luci-app-ddns
-PACKAGES="$PACKAGES luci-app-acme
 PACKAGES="$PACKAGES luci-app-vsftpd
 
 # 构建镜像
