@@ -74,7 +74,7 @@ PACKAGES="$PACKAGES luci-i18n-vsftpd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-cloudflared-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-zerotier-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-softethervpn-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn
+PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 
 # 文件管理器
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
