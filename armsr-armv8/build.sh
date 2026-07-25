@@ -77,7 +77,7 @@ PACKAGES="$PACKAGES luci-i18n-zerotier-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-softethervpn-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 # 文件管理器
-#PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 # ======== shell/custom-packages.sh =======
 # 合并 imm 仓库以外的第三方插件
 PACKAGES="$PACKAGES $CUSTOM_PACKAGES"
