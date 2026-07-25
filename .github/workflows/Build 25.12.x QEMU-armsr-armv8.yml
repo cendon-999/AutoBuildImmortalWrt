@@ -100,8 +100,8 @@ jobs:
               -e ROOTFS_PARTSIZE=$rootfs_partsize \
               -e ENABLE_PPPOE=${{ inputs.enable_pppoe }} \
               -e PPPOE_ACCOUNT=${{ inputs.pppoe_account }} \
-              -e PPPOE_PASSWORD=${{ inputs.pppoe_password }} \
-              immortalwrt/imagebuilder:armsr-armv8-openwrt-${luci_version} /bin/bash -c "mkdir -p /home/build/immortalwrt/scripts && touch /home/build/immortalwrt/scripts/opkg-key && chmod +x /home/build/immortalwrt/scripts/opkg-key && /home/build/immortalwrt/build.sh"
+              -e PPPOE_PASSWORD=*** inputs.pppoe_password }} \
+              immortalwrt/imagebuilder:armsr-armv8-openwrt-${luci_version} /bin/bash -c "mkdir -p /home/build/immortalwrt/scripts && touch /home/build/immortalwrt/scripts/opkg-key && chmod +x /home/build/immortalwrt/scripts/opkg-key && echo 'CONFIG_USE_APK=y' >> /home/build/immortalwrt/.config && /home/build/immortalwrt/build.sh"
           done
       - name: Copy Firmware to workspace
         run: |
@@ -116,6 +116,6 @@ jobs:
           files: |
             ${{ github.workspace }}/*.qcow2
             ${{ github.workspace }}/*.vmdk
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: *** secrets.GITHUB_TOKEN }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: *** secrets.GITHUB_TOKEN }}
